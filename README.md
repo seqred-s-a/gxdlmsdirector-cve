@@ -24,11 +24,11 @@ vulnerabilities can be used by the attacker to achieve code execution.
 **Description**
 
 A man-in-the-middle attacker (e.g. a malicious Wi-Fi network operator) can prompt the user to
-download updates by modifying the contents of gurux.fi/obis/files.xml and gurux.fi/updates/updates.xml.
-Then, the attacker can modify the contents of downloaded files. In the case of add-ins (if the user
-is using those), this will lead to code execution. In case of OBIS codes (which the user is always
-using as they are needed to communicate with the energy meters), the attacker can achieve code
-execution by exploiting a path traversal vulnerability.
+download updates by modifying the contents of ```gurux.fi/obis/files.xml``` and
+```gurux.fi/updates/updates.xml```. Then, the attacker can modify the contents of downloaded files.
+In the case of add-ins (if the user is using those), this will lead to code execution. In case of
+OBIS codes (which the user is always using as they are needed to communicate with the energy meters),
+the attacker can achieve code execution by exploiting a path traversal vulnerability.
 
 When downloading OBIS codes, the program does not verify that the downloaded files are actual OBIS
 codes and doesn’t check for path traversal. This allows the attacker to send executable files and

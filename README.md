@@ -39,8 +39,8 @@ execution even if the user doesn’t have any add-ins installed.
 **Reproduction**
 
 1. Start an HTTP server.
-2. Inside its root directory, create a directory called obis.
-3. Create a file obis/files.xml with the following contents:
+2. Inside its root directory, create a directory called ```obis```.
+3. Create a file ```obis/files.xml``` with the following contents:
 
 ```xml
 <files>
@@ -48,11 +48,13 @@ execution even if the user doesn’t have any add-ins installed.
 </files>
 ```
 
-4. Create a directory Users/Public/Documents.
-5. Create a file Users/Public/Documents/test.txt.
-6. On a Windows machine, edit the file C:\Windows\system32\drivers\etc\hosts and add the following line to it: 127.0.0.1 gurux.fi (if your HTTP server is not the same as your Windows machine, replace 127.0.0.1 with the server’s IP).
+4. Create a directory ```Users/Public/Documents```.
+5. Create a file ```Users/Public/Documents/test.txt```.
+6. On a Windows machine, edit the file ```C:\Windows\system32\drivers\etc\hosts``` and add the
+following line to it: ```127.0.0.1 gurux.fi``` (if your HTTP server is not the same as your Windows machine,
+replace ```127.0.0.1``` with the server’s IP).
 7. Start Gurux GXDLMS Director. When prompted to download an update, accept.
-8. Verify that C:\Users\Public\Documents\ now contains file test.txt.
+8. Verify that ```C:\Users\Public\Documents\``` now contains file ```test.txt```.
 
 **Remedy**
 
